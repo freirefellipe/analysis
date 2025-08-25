@@ -1,0 +1,13 @@
+OUTSIDE
+psql --version												- exibe a versão do Postgre
+sudo -u [user] psql											- faz login no SQL
+psql -h localhost -U postgres								- faz login no SQL, especificando o host com -h, e mais segurança, no protocolo SSL
+sudo systemctl status postgresql							- exibe status do PostgreSQL
+
+INSIDE
+\l															- mostra as tabelas disponíveis -
+\q															- sair do sql
+\c [bancodedados]											- selecionar uma tabela 
+alter user [user] password '[password]';					- alterar password do usuário selecionado
+\dt															- exibe todos os relacionamentos (tabelas)
+\?															- mostra vários comandos

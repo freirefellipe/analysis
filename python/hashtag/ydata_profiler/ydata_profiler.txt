@@ -1,0 +1,1 @@
+Esse pacote serve para fazer uma análise extremamente minuciosa de dados, ainda correlacionando colunas (variáveis) com potenciais informações, e gerando gráficos para melhor observação.

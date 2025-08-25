@@ -1,0 +1,42 @@
+'''
+
+1. números a serem buscados, extraídos, tratados e exibidos como gráfico. ELEIÇÕES ou SEGURANÇA PÚBLICA (algo com relação a criminalidade ou armamento)
+
+2. algo que envolva um dicionário com palavras a serem varridas em uma página, exibindo toda a frase.
+
+3. algo com gráfico temporal sobre desempenho dos alunos em uma turma ao longo das avaliações, considerando todas as notas na prova
+
+4. abastecimento Duster
+
+--
+
+conterá: 
+  lambda
+    map
+    reduce
+    filter
+  argv
+  funções
+  classes
+
+tem que ter gráfico, um deles como aquele da população do Brasil nas diferentes regiões.
+
+extra: seria um diferencial aprender a aplicar o resultado no Google Data Studio
+
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

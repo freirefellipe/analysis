@@ -1,0 +1,884 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial,
+		sans-serif;
+	font-size: 0.75em;
+}
+
+a {
+	text-decoration: underline;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+	color: black !important;
+	text-decoration: none;
+}
+
+h1 {
+	background-image: url(../images/bg_h1.gif);
+	background-repeat: repeat-x;
+	color: black;
+	font-size: 0.95em;
+	border: none;
+	font-weight: bold;
+	padding-top: 0.82em; /* para ajuste de altura qndo tem imagem */
+	padding-bottom: 0.95em; /* faz a funcao do line-height, mas para ir */
+	padding-left: 1em;
+	padding-right: 0.5em;
+}
+
+h2 {
+	font-size: 125%;
+	border-bottom: 1px solid #7D7D7D;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 125%;
+	border-bottom: none;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 110%;
+	border-bottom: none;
+	font-weight: bold;
+}
+
+h5 {
+	font-size: 100%;
+	border-bottom: none;
+	font-weight: bold;
+	color: #76797c;
+}
+
+h6 {
+	font-size: 85%;
+	border-bottom: none;
+	font-weight: bold;
+	color: #76797c;
+}
+
+select {
+	border: 1px solid #7D7D7D;
+	color: black;
+	background-color: White;
+	vertical-align: top;
+}
+
+fieldset {
+	border: 1px solid #7D7D7D;
+	margin: 1em 0em 1em 0em;
+	padding: 0em 1em 1em 1em;
+	line-height: 1.5em;
+	width: auto;
+}
+
+legend {
+	background: white;
+	padding: 0.2em;
+	font-size: 70%;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+textarea {
+	font: 100% Monaco, "Courier New", Courier, monospace;
+	border: 1px solid #7D7D7D;
+	color: black;
+	background: White url(../images/input_background.gif) repeat-x;
+	width: 100%;
+}
+
+input {
+	visibility: visible;
+	border: 1px solid #7D7D7D;
+	color: black;
+	vertical-align: middle;
+	background: White url(../images/input_background.gif) repeat-x;
+}
+
+button {
+	visibility: visible;
+	border: 1px solid #7D7D7D;
+	color: black;
+	vertical-align: middle;
+	background: White url(../images/input_background.gif) repeat-x;
+}
+
+label {
+	font-weight: bold;
+}
+
+blockquote { /*	adding-left: 0.5em;
+	margin-left: 0;*/
+	border-left: 4px solid #7D7D7D;
+	color: #76797c;
+	padding: 0 10px;
+	margin: 0 0 0 10px;
+}
+
+pre {
+	font-family: Monaco, "Courier New", Courier, monospace;
+	font-size: 100%;
+	padding: 1em;
+	color: black;
+	overflow: auto;
+	background-color: #ECECEC;
+	border: 1px solid #7D7D7D;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	color: #7A7A7A;
+	background-color: #7A7A7A;
+	margin: 0.5em 0 1em 0;
+}
+
+/* fim - base */ /* inicio - estrutura do site */
+#info-gestor a {
+	width: auto;
+	float: right;
+	position: relative; *
+	top: 32.8em;
+	top: -50px;
+	cursor: hand;
+}
+
+#suporte a {
+	width: auto;
+	position: relative;
+	float: right;
+	top: 5.5em; *
+	top: 4.2em;
+	cursor: hand;
+}
+
+.obrigatorio {
+	background-position: bottom;
+}
+
+/*#caixa-gestor{
+	width:90%;
+	position:relative;
+	margin-top:2em;
+	margin-left:15px;
+	margin-right:15px;
+}
+*/
+#titulo_gestor {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+#tituloGestDes {
+	width: 100%;
+	margin-left: 8px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+
+#portal-column-content {
+	position: relative;
+	width: 90%;
+	margin-top: 2em;
+	margin-left: 7em;
+}
+
+#portal-content-text {
+	position: relative;
+	width: 90%;
+	margin-top: -1em;
+	margin-left: 7em;
+	margin-bottom: 6em;
+	/*_margin-bottom:2em;*/
+}
+
+.coluna-primeiro-acesso {
+	width: 24.35em; *
+	width: 22.6em;
+	position: relative;
+	float: left;
+	margin-left: 0.8em;
+}
+
+.caixa-padrao-orientacao {
+	width: 45.5em;
+	position: relative;
+	float: left;
+	margin-left: 0.3em;
+}
+
+/* inicio - cabecalho */
+#portal-header {
+	background: url(../images/bg_topo.gif) repeat-x bottom left;
+	width: auto;
+	border-bottom: 1px solid black;
+	position: relative;
+	height: 109px;
+}
+
+#info-site {
+	background: url(../images/logo_semfundo.gif) no-repeat 6px 8px;
+	float: left;
+	width: 450px;
+	padding-left: 7em;
+	padding-bottom: 1em;
+	font-weight: bold;
+}
+
+#info-site-orgao {
+	padding-top: 7px;
+	color: white;
+}
+
+#info-site-gestor {
+	padding-top: 15px;
+}
+
+#info-site-sistema {
+	padding-top: 6px;
+	color: #9A6837;
+}
+
+#info-site-versao {
+	font-size: 0.9em;
+	color: #9A6837;
+	font-weight: normal;
+	padding-top: 4px;
+}
+
+#info-logado {
+	width: 40%;
+	float: right;
+	padding-top: 33px;
+	font-size: 95%;
+}
+
+#info-logado-nome {
+	background: url(../images/user.gif) no-repeat scroll top left;
+	padding-left: 20px;
+}
+
+#info-logado-unidade {
+	padding-top: 3px;
+	margin-bottom: 3px;
+}
+
+.linkSair {
+	text-decoration: none;
+	padding-top: 2px;
+	font-weight: bold;
+}
+
+#loginAcesso {
+	width: 20%;
+	float: right;
+	position: relative;
+	font-size: 95%;
+}
+
+.argumentos {
+	height: 5em;
+	margin-top: 1em;
+	margin-bottom: 3em;
+}
+
+.grid {
+	
+}
+
+.corpo-centro {
+	width: 100%;
+	margin-top: 0.5em;
+	position: relative;
+}
+
+/* Defini barra das migalhas de pao */
+#portal-breadcrumbs {
+	text-transform: lowercase;
+	position: relative;
+	width: 100%;
+	line-height: 1.6em;
+	font-size: 0.95em;
+}
+
+#portal-breadcrumbs a {
+	text-decoration: none;
+}
+
+/* conteudo inicial das migalhas de pao */
+#breadcrumbs-you-are-here {
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+/* Separador das migalhas de pao */
+.breadcrumbSeparator {
+	font-size: 120%;
+}
+
+/* fim - migalhas de pao */ /* inicio - menu navegacao */
+ul.navTree {
+	line-height: 1.5em;
+	margin: 0.6em 0 0 1.2em;
+	padding: 0 0 0.4em 0;
+	list-style-image: url(../images/folder_icon_lista.gif);
+	list-style-type: circle;
+}
+
+ul.navTree a {
+	text-decoration: none;
+}
+
+ul.navTree a:hover {
+	text-decoration: underline;
+}
+
+ul.navTree li {
+	padding-bottom: 0.8em;
+}
+
+/* fim - menu navegacao */ /* inicio - portlet da lateral esquerda */
+dl.portlet {
+	border-bottom: 1px solid #DBDBDB;
+	margin: 0 0 10px 0;
+	font-size: 94%;
+}
+
+/* Cabecalho do portlet tipico da coluna lateral */
+.portletHeader {
+	font-weight: bold;
+	border-bottom: 1px solid #9C9C9C;
+	border-top: 1px solid #DBDBDB;
+	border-left: 1px solid #DBDBDB;
+	border-right: 1px solid #DBDBDB;
+	background-color: black;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 10px;
+	color: white;
+}
+
+.portletHeader a {
+	color: #000000;
+	text-decoration: none;
+}
+
+/* Cabecalho do portlet especifico Destaques da pagina inicial */
+.portletDestaques {
+	margin-bottom: 7px;
+}
+
+/* Item do portlet tipico da coluna lateral */
+.portletItem {
+	margin: 0;
+	padding: 0 1em 0.2em 1em;
+	border-left: 1px solid #DBDBDB;
+	border-right: 1px solid #DBDBDB;
+}
+
+/* Rodape do portlet tipico da coluna lateral */
+dd.portletFooter {
+	margin: 0;
+	background-color: white;
+	border-left: 1px solid #DBDBDB;
+	border-right: 1px solid #DBDBDB;
+	padding-right: 1em;
+	padding-bottom: 0.7em;
+	text-align: right;
+	text-transform: lowercase;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+dd.portletFooter a {
+	color: #000000;
+	text-decoration: none;
+}
+
+/* fim - portlet da lateral esquerda */
+	/* inicio - portlet da pagina inicial */
+	/* Defini portlet da pagina inicial */
+dl.portletInicial {
+	border-bottom: 1px solid #DBDBDB;
+	margin: 0 0 10px 0;
+	font-size: 94%;
+}
+
+/* Cabecalhho do portlet da pagina inicial */
+.portletHeaderInicial {
+	background: url(../images/bg_portletInicial.gif) center left repeat-x;
+	font-weight: bold;
+	border-bottom: 1px solid #9C9C9C;
+	border-top: 1px solid #DBDBDB;
+	border-left: 1px solid #DBDBDB;
+	border-right: 1px solid #DBDBDB;
+	background-color: transparent;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 10px;
+}
+
+.portletHeaderInicial a {
+	color: #000000;
+	text-decoration: none;
+}
+
+/* Item do portlet da pagina inicial */
+.portletItemInicial {
+	margin: 0;
+	padding: 0 1em 0.2em 1em;
+	border-left: 1px solid #DBDBDB;
+	border-right: 1px solid #DBDBDB;
+}
+
+/* Rodape do portlet da pagina inicial */
+dd.portletFooterInicial {
+	margin: 0;
+	background-color: white;
+	border-left: 1px solid #DBDBDB;
+	border-right: 1px solid #DBDBDB;
+	padding-right: 1em;
+	padding-bottom: 0.7em;
+	text-align: right;
+	text-transform: lowercase;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+dd.portletFooterInicial a {
+	color: #000000;
+	text-decoration: none;
+}
+
+/* fim - portlet da pagina inicial */ /* inicio - rodape */
+	/* Define rodape - taniaa testando */
+#portal-colophon {
+	border-top: 1px solid black;
+	background: url(../images/bg_rodape.gif) repeat-x center;
+	position: relative;
+	width: 100%;
+	height: 58px;
+	text-align: center; *
+	top: 34.1em;
+	top: 10.7em;
+}
+
+#rodape {
+	border-top: 1px solid black;
+	background: url(../images/bg_rodape.gif) repeat-x center;
+	position: relative;
+	width: 100%;
+	height: 58px;
+	text-align: center;
+	top: 8em; *
+	top: 4.7em;
+}
+
+/* Texto do rodap� */
+.texto_rodape {
+	font-size: 0.9em;
+	padding-bottom: 1px;
+	padding-top: 15px;
+}
+
+/* fim - rodape */ /* inicio - pagina inicial */
+	/* coluna da esquerda */
+.coluna-esquerda {
+	float: left;
+	width: 225px;
+}
+
+/* coluna da direita */
+.coluna-direita {
+	width: 225px;
+	float: left;
+}
+
+/* titulo identico ao header do portlet a esquerda */
+h1.tituloEspecial {
+	background-image: none;
+	background-color: black;
+	color: white;
+	font-size: 94%;
+	border-top: 1px solid #7A7A7A;
+	border-bottom: 1px solid #7A7A7A;
+	border-left: 1px solid #7A7A7A;
+	border-right: 1px solid #7A7A7A;
+	font-weight: bold;
+	padding-top: 0.75em; /* para ajuste de altura qndo tem imagem */
+	padding-bottom: 0.75em; /* faz a funcao do line-height, mas para ir */
+	padding-left: 1em;
+	padding-right: 0.5em;
+	page-break-before: always; /* ver se isso � necessario ?? */
+}
+
+/* fim - pagina inicial */ /* inicio - tabela */
+.listing a,.listingEspecial a {
+	text-decoration: underline;
+	color: black;
+}
+
+.listing a:hover,.listingEspecial a:hover {
+	text-decoration: underline;
+}
+
+table.listingEspecial {
+	margin: 0 auto;
+	/* padding:5px;*/
+}
+
+table.listing,table.listing td,table.listingEspecial,table.listingEspecial td
+	{
+	border-collapse: collapse;
+}
+
+/* Bordas a esquerda e de baixo da tabela padrao 
+.listing,.stx table,.listingEspecial {
+	border-left: 1px solid #9c9c9c;
+	border-bottom: 1px solid #9C9C9C;
+	font-size: 95%;
+}
+*/
+/* Bordas da esquerda, da direira e de baixo da tabela especial 
+.listingEspecial {
+	border-left: 1px solid #DBDBDB;
+	border-bottom: 1px solid #DBDBDB;
+	border-right: 1px solid #DBDBDB;
+	font-size: 95%;
+	height: 12em;
+}
+*/
+/* Cabelho da tabela degrade - especial 
+.listingEspecial th {
+	background: #E3D398 url(../images/bg_header_table.gif) repeat-x top left
+		;
+	color: black;
+	font-weight: bold;
+	border-top: 1px solid #DBDBDB;
+	border-bottom: 1px solid #9C9C9C;
+	text-align: left;
+	padding: 0.4em 1em 0.4em 1em; /* mexer */
+}
+*/
+/* Icones gerais do cabecalho da tabela especial */
+.listingEspecial .operacoes {
+	text-align: right;
+	padding: 0 0.3em 0 0; /* Importante quando se usa imagem! */
+}
+
+/* Cabelho da tabela preta - padrao */
+.listing th,.stx table th { /*  background-color:  black;*/
+	background-image: url(../images/bg_h1.gif);
+	background-repeat: repeat-x;
+	color: black;
+	font-weight: bold;
+	border-top: 1px solid #9C9C9C;
+	border-bottom: 1px solid #9C9C9C;
+	border-right: 1px solid #9C9C9C;
+	text-transform: lowercase;
+	padding: 0.2em 1em 0.2em 1em;
+}
+
+.listing .top,.listingEspecial .top {
+	border-left: 1px solid #9C9C9C;
+	border-top: 1px solid #9C9C9C ! important;
+	border-right: 1px solid #9C9C9C ! important;
+}
+
+/* Borda direita da tabela padrao */
+.listing td,.stx table td {
+	border-right: 1px solid #9C9C9C;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+}
+
+/* Borda direita da tabela especial */
+.listingEspecial td { /*border-right: 1px solid #DBDBDB;*/
+	padding: 0.2em 0.5em 0.2em 0.5em;
+}
+
+/* Zebrado da tabela, com fundo */
+.even {
+	background-color: #ECECEC;
+}
+
+/* Zebrado da tabela, sem fundo */
+.odd {
+	background-color: transparent;
+}
+
+/* fim - tabela */ /* inicio - especifica */
+	/* Link para o Voltar, mais usado no BS */
+.voltar a {
+	text-decoration: none;
+	color: black;
+}
+
+.voltar a:hover {
+	text-decoration: underline;
+}
+
+/* Texto desabilitado, mais usado no BS */
+.texto_inativo {
+	color: #9C9C9C;
+}
+
+/* Teclado virtual do e-mail squirrelmail */
+.teclado-virtual {
+	font-weight: normal;
+	text-align: center;
+	padding-top: 1em;
+}
+
+.teclado-virtual a {
+	text-decoration: underline;
+	color: black;
+}
+
+.teclado-virtual a:hover {
+	text-decoration: underline;
+}
+
+/* fim - especifica */ /* inicio - formulario */
+	/* Texto resumido que descreve o documento */
+.documentDescription {
+	font-weight: bold;
+	display: block;
+	margin: 0em 0em 0.5em 0em;
+	line-height: 1.5em;
+}
+
+/* Texto discreto usado geralmente na data de atualizacao e autor */
+.discreet {
+	color: #76797c;
+	font-size: 85%;
+	font-weight: normal;
+}
+
+/* Texto resumido como ajuda para um campo */
+.formHelp {
+	font-size: 95%;
+	color: #76797c;
+	margin: 0 0 0.2em 0;
+}
+
+.formHelp:hover {
+	color: black;
+	cursor: default;
+}
+
+/* Delimita um campo no form */
+.field {
+	top: 0;
+	left: 0;
+	margin: 0 1em 1em 0;
+}
+
+/* Delimita os botoes no form */
+.formControls {
+	margin: 1em 0;
+}
+
+/* Defini um campo obrigatorio no form */
+.fieldRequired {
+	background: url(../images/required.gif) center left no-repeat;
+	padding: 0 0 0 8px;
+	color: white;
+}
+
+/* Botao padrao */
+.context,.documentEditable * .context {
+	background: transparent url(../images/linkTransparent.gif) 9px 1px
+		no-repeat;
+	cursor: pointer;
+	font-size: 85%;
+	padding: 1px 2px 1px 18px;
+	text-transform: lowercase;
+	overflow: visible;
+	font-family: Verdana, Lucida, Helvetica, Arial, sans-serif;
+}
+
+/* Botao opaco, secundario */
+.standalone,.documentEditable * .standalone {
+	background: transparent url(../images/linkOpaque.gif) 9px 1px no-repeat;
+	cursor: pointer;
+	font-size: 85%;
+	padding: 1px 1px 1px 18px;
+	text-transform: lowercase;
+	overflow: visible;
+	font-family: Verdana, Lucida, Helvetica, Arial, sans-serif;
+}
+
+/* Retira borda. Mais usado no input do tipo radio e checkbox */
+.noborder,.documentEditable * .noborder {
+	border: none;
+	margin: 0;
+	background: none;
+	background-color: transparent;
+}
+
+/* inicio */
+.coluna-inicio-login {
+	width: 15em;
+	position: relative;
+	float: left;
+	padding: 5px 5px 5px 5px;
+}
+
+.caixa-identificacao {
+	width: 30%;
+	/*position: relative;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 2px;*/
+}
+
+.caixa-esqueceu-senha {
+	width: 30%;
+	position: relative;
+	float: left;
+	margin-left: 2px;
+	margin-top: 10px;
+	margin-right: 2px;
+}
+
+.caixa-certificacao-digital {
+	width: 30%;
+	position: relative;
+	float: left;
+	margin-left: 2px;
+	margin-top: 10px;
+	margin-right: 2px;
+}
+
+/* padrao */
+.coluna-orientacao {
+	width: 100%;
+	position: absolute;
+	display: block;
+	float: left;
+	margin-left: 2px;
+}
+
+/* Delimita conteudo */
+.pos_form {
+	width: 100%;
+	height: 100%;
+	/*border:1px solid black;*/
+}
+
+/* Botao do campo de busca */
+input.searchButton {
+	font-family: Verdana, Lucida, Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	background-image: none;
+	padding: 0 2px 0 2px;
+	text-transform: lowercase;
+	cursor: pointer;
+	overflow: visible;
+}
+
+/* fim - cabecalho */
+.mensagem {
+	width: 60%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	position: relative;
+	color: #0066FF;
+	padding: 5px;
+	margin-left: 200px; *
+	margin-left: 200px;
+	text-align: center;
+	display: block;
+}
+
+.mensagem a {
+	width: 74px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	position: relative;
+	display: block;
+	color: #0066FF;
+	text-align: center;
+	left: 645px; *
+	left: 250px; /* hack para o IE7*/
+	top: -14px;
+}
+
+.corpo-poup-up {
+	width: 100%;
+	position: relative;
+	height: 20.5em; *
+	height: 19em; /* hack para o IE7*/
+	margin-top: 1.5em;
+	margin-bottom: 2.5em;
+}
+
+.paginaList {
+	width: 91px;
+	margin-left: 20px;
+	position: relative;
+	left: 23px;
+	top: 2px;
+}
+
+.paginaTexto {
+	width: 35em;
+	position: relative;
+	left: 75px;
+	top: 2px;
+}
+
+span.paginaTexto input {
+	text-align: center;
+}
+
+.rich-panel-header {
+	background: #E3D398 url(../images/bg_header_table.gif) repeat-x top left
+		;
+	color: black;
+	font-weight: bold;
+	border-top: 1px solid #DBDBDB;
+	border-bottom: 1px solid #9C9C9C;
+	text-align: left;
+	padding: 0.4em 1em 0.4em 1em; /* mexer */
+}
+
+.rich-fileupload-ico-add {
+	visibility: visible;
+	border: 1px solid #7D7D7D;
+	color: black;
+	vertical-align: middle;
+	background: White url(../images/input_background.gif) repeat-x;
+}
+
+.rich-fileupload-toolbar-decor {
+	background: #E3D398 url(../images/bg_header_table.gif) repeat-x top left
+		;
+	color: black;
+	font-weight: bold;
+	border-top: 1px solid #DBDBDB;
+	border-bottom: 1px solid #9C9C9C;
+	text-transform: capitalize;
+	text-align: left;
+	padding: 0.4em 1em 0.4em 1em; /* mexer */
+}
+
+

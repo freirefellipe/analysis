@@ -1,0 +1,1 @@
+This is a program that reads a csv file with different data randomly distributed along its lines, and organizes those data into 4 different list in order to create a new csv file with 4 columns separated by semicolons. In the end, we shall have a ready-for-excel file.
