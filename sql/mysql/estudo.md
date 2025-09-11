@@ -2,7 +2,7 @@ FONTE: https://www.youtube.com/watch?v=Kh_5NYtZrHU
 ---
 **BAIXAR NO TERMINAL**
 $ sudo apt install mysql-server
-    - login dever ser feito com sudo. Após definir senha, sudo só será possível inserindo a senha
+    - login deve ser feito com sudo. Após definir senha, sudo só será possível inserindo a senha
     
 **DETERMINAR SENHA PARA O ROOT**
 -> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<senha>';
