@@ -1,4 +1,1 @@
-/home/fellipe/Dropbox/code/analysis/python/public-data/gitignore/
-./python/public-data/gitignore/
-*/gitignore/
-gitignore/
+**/gitignore/

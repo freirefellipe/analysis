@@ -1,0 +1,5 @@
+employee_id;name;manager_id;sector_id
+1;david;1;4
+2;john;2;3
+3;ross;3;2
+4;stacy;4;1

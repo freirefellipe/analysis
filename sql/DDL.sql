@@ -1,3 +1,5 @@
+USE analise;
+
 CREATE TABLE employees(
 employee_id INT(10),
 name VARCHAR(999),
@@ -6,7 +8,7 @@ sector_id INT(10)
 );
 
 CREATE TABLE sectors(
-sector_id INT(10),
+sector_id INT (10),
 name VARCHAR(999)
 );
 
@@ -17,17 +19,17 @@ area VARCHAR(999)
 );
 
 
-LOAD DATA INFILE '/var/lib/mysql-files/bytebytego/employees.csv'
+LOAD DATA LOCAL INFILE '/home/fellipe/Dropbox/code/analysis/public_data/company/employees.csv'
 INTO TABLE employees
 FIELDS TERMINATED BY ';'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE '/var/lib/mysql-files/bytebytego/managers.csv'
+LOAD DATA LOCAL INFILE '/home/fellipe/Dropbox/code/analysis/public_data/company/managers.csv'
 INTO TABLE managers
 FIELDS TERMINATED BY ';'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE '/var/lib/mysql-files/bytebytego/sectors.csv'
+LOAD DATA LOCAL INFILE '/home/fellipe/Dropbox/code/analysis/public_data/company/sectors.csv'
 INTO TABLE sectors
 FIELDS TERMINATED BY ';'
 IGNORE 1 ROWS;
