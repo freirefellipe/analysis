@@ -59,5 +59,5 @@ Top 10 best movies:
 
 import pandas
 df_filmes = pandas.DataFrame(filmes_lista_dicio)
-display(df_filmes)
-display(df_filmes.info())
+print(df_filmes)
+print(df_filmes.info())
